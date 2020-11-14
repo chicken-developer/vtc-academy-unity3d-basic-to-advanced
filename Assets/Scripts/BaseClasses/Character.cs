@@ -3,35 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character: MonoBehaviour  {
-    
-    private float _moveSpeed;
-    private float _jumpForce;
+public class Character: MonoBehaviour {
+    public CharacterController controller;
+    public float movementSpeed = 6f;
+    public float turnSmoothTime = 0.1f;
+    private float turnSmoothVelocity;
+    public Transform cam;
+    void MovementHandle() {
+        float horizonntal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizonntal,0,vertical).normalized;
 
-    void Movement() {
-        float movementSpeed = 0.01f;
-        if (Input.GetKey(KeyCode.W)) {
-            transform.position+= Vector3.forward * movementSpeed;
-        }
-        if (Input.GetKey(KeyCode.A)) {
-            transform.position += Vector3.left * movementSpeed;
-        }
+        if (direction.magnitude >= 0.1f) {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angel =
+                Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angel, 0f);
 
-        if (Input.GetKey(KeyCode.D)) {
-            transform.position += Vector3.right * movementSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.S)) {
-            transform.position += Vector3.back * movementSpeed;
-        }
-        
-        if (Input.GetKey(KeyCode.Space)) {
-        }
-
-        if (Input.GetKey(KeyCode.C)) {
-        }
-
-        if (Input.GetKey(KeyCode.Z)) {
+            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDirection.normalized * movementSpeed * Time.deltaTime);
         }
     }
     void Awake() {
@@ -43,6 +33,6 @@ public class Character: MonoBehaviour  {
     }
 
     void Update() {
-        Movement();
+      MovementHandle();
     }
 }
