@@ -117,7 +117,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BaseClasses" t="Include">
+            <e p="BaseCharacter.cs" t="Include" />
             <e p="Character.cs" t="Include" />
+            <e p="Stats.cs" t="Include" />
           </e>
           <e p="Helper.cs" t="Include" />
           <e p="Learning" t="Include">

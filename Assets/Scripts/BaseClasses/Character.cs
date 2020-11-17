@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using BaseClass;
 using UnityEngine;
 
 public class Character: MonoBehaviour {
     public CharacterController controller;
+    public BaseCharacter character;
     public float movementSpeed = 6f;
     public float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
@@ -24,8 +26,17 @@ public class Character: MonoBehaviour {
             controller.Move(moveDirection.normalized * movementSpeed * Time.deltaTime);
         }
     }
+
+    void InputHandle() {
+        if (Input.GetKey(KeyCode.Space)) {
+            Debug.Log("Jump");
+        }
+        if (Input.GetKey(KeyCode.Mouse0)) {
+            character.Attack();
+        }
+    }
     void Awake() {
-        
+        character = new BaseCharacter();
     }
 
     void Start() {
@@ -34,5 +45,6 @@ public class Character: MonoBehaviour {
 
     void Update() {
       MovementHandle();
+      InputHandle();
     }
 }
