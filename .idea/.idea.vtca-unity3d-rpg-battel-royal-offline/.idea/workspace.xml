@@ -4,8 +4,31 @@
     <list default="true" id="b8739a68-9630-48ce-aa2f-9b3e7a7225b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.vtca-unity3d-rpg-battel-royal-offline/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vtca-unity3d-rpg-battel-royal-offline/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.vtca-unity3d-rpg-battel-royal-offline/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vtca-unity3d-rpg-battel-royal-offline/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouch Idle 03 Looking Over.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouch Idle 03 Looking Over.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouch To Stand.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouch To Stand.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouched Walking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Crouched Walking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jumping.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jumping.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Running Jump.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Running Jump.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Running.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Running.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Running.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Surprised.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Surprised.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walking.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Walking.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animators/PlayerAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleIsland.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleIsland.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FantasyKingdom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FantasyKingdom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseClasses/BaseCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseClasses/BaseCharacter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Character.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +42,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/BaseCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Character.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/Inputs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClasses/BaseState.cs" />
       </list>
     </option>
   </component>
@@ -31,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -71,7 +98,9 @@
       <workItem from="1605496694180" duration="619000" />
       <workItem from="1605538321154" duration="387000" />
       <workItem from="1605611852796" duration="32000" />
-      <workItem from="1605611913007" duration="2618000" />
+      <workItem from="1605611913007" duration="4225000" />
+      <workItem from="1605616309975" duration="2422000" />
+      <workItem from="1605749790110" duration="1940000" />
     </task>
     <servers />
   </component>

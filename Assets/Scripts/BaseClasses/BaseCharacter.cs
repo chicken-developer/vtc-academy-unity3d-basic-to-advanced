@@ -11,8 +11,12 @@ namespace BaseClass {
         public void Attack() {
             Debug.Log("Pressed Attack");
         }
-        void AddItem() {
+
+        void FoundItem() {
             
+        }
+        void LootItem() {
+            Debug.Log("Loot Item");
         }
         
     }

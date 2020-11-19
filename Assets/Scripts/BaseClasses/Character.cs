@@ -2,16 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using BaseClass;
+using UnityEditor;
 using UnityEngine;
 
 public class Character: MonoBehaviour {
     public CharacterController controller;
+    public Animator animator;
     public BaseCharacter character;
     public float movementSpeed = 6f;
     public float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
     public Transform cam;
+    
+    
     void MovementHandle() {
+        animator.SetBool("isRunning", true);
+        
+        
         float horizonntal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizonntal,0,vertical).normalized;
@@ -37,6 +44,8 @@ public class Character: MonoBehaviour {
     }
     void Awake() {
         character = new BaseCharacter();
+        animator = GetComponentInChildren<Animator>();
+        Cursor.visible = false;
     }
 
     void Start() {
@@ -44,7 +53,7 @@ public class Character: MonoBehaviour {
     }
 
     void Update() {
-      MovementHandle();
+        MovementHandle();
       InputHandle();
     }
 }
